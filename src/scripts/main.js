@@ -130,8 +130,10 @@ function validate(form) {
     return valid;
 }
 
-// Удаляем атрибуты required и pattern, так как они написаны на случай отключенного js
+// Удаляем атрибуты формы, так как они написаны на случай отключенного js
 function delAttributes() {
+    form.removeAttribute('action');
+    form.removeAttribute('method');
     form.elements.phone.removeAttribute('required');
     form.elements.phone.removeAttribute('pattern');
     form.elements.password.removeAttribute('required');
