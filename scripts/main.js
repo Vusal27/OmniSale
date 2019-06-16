@@ -109,6 +109,8 @@ function validate(form) {
     return valid;
 }
 function delAttributes() {
+    form.removeAttribute('action');
+    form.removeAttribute('method');
     form.elements.phone.removeAttribute('required');
     form.elements.phone.removeAttribute('pattern');
     form.elements.password.removeAttribute('required');
