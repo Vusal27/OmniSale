@@ -1,0 +1,75 @@
+html, body {
+    width: 100%;
+    font-family: 'Helvetica-Neue', Helvetica, sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0px;
+    line-height: 1.42;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+button {
+    outline: none;
+}
+
+:root {
+    font-size: 15px;
+    @include laptop {
+        font-size: 14px;
+    }
+    @include tablet {
+        font-size: 13px; 
+    }
+    @include phone {
+        font-size: 12px;
+    }
+}
+input, textarea {
+    box-sizing: border-box;
+}
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #fff inset;
+    -webkit-text-fill-color: #000;
+    border-color: #fff !important;
+}
+.wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+}
+.main {
+    background: url("../images/background/bg.png");
+    background-size: 100% 100%;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    @include tablet() {
+        background-size: 960px 100%;
+        background-position-x: 50%;
+    }
+    &::before {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, .5);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
