@@ -154,7 +154,7 @@ function blurFunc() {
                     
                 // Если браузер IE, меняем картинку(ie не поддерживает filter:blur)
                 if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {
-                    blurCSS.background="url(../images/background/bg-blur-ie.png)";
+                    blurCSS.background="url(./images/background/bg-blur-ie.png)";
                     blurCSS.backgroundSize=`100vw 100vh`;
                     if (imgWidth>767) { // большие разрешения
                         blurCSS.backgroundPosition = `${posLeft}px ${posTop}px`;
