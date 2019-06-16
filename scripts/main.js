@@ -126,7 +126,7 @@ function blurFunc() {
                 posTop = -wrapper.offsetTop,
                 blurCSS = blur.style;
                 if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {
-                    blurCSS.background = "url(../images/background/bg-blur-ie.png)";
+                    blurCSS.background = "url(./images/background/bg-blur-ie.png)";
                     blurCSS.backgroundSize = '100vw 100vh';
                     if (imgWidth > 767) {
                         blurCSS.backgroundPosition = posLeft + 'px ' + posTop + 'px';
